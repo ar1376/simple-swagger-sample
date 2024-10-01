@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swagger Editor</title>
+    <link
+            rel="stylesheet"
+            type="text/css"
+            href="swagger-editor/swagger-editor.css"
+    />
+    <script src="swagger-editor/swagger-editor-bundle.js"></script>
+    <script src="swagger-editor/swagger-editor-standalone-preset.js"></script>
+</head>
+<body>
+<div id="swagger-editor"></div>
+<script>
+    SwaggerEditorBundle({
+        dom_id: '#swagger-editor',
+        url: '/v3/api-docs', // Loads your Springdoc OpenAPI JSON
+    });
+</script>
+</body>
+</html>
